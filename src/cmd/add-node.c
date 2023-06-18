@@ -1,12 +1,5 @@
 // -*- mode: c; tab-width: 4; indent-tabs-mode: 1; st-rulers: [70] -*-
 // vim: ts=8 sw=8 ft=c noet
-/*
- * Copyright (c) 2015 Pagoda Box Inc
- * 
- * This Source Code Form is subject to the terms of the Mozilla Public License, v.
- * 2.0. If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- */
 
 #include <stdio.h>	/* standard buffered input/output */
 #include <stdlib.h>	/* standard library definitions */
@@ -21,7 +14,7 @@
 
 static red_node_t node;
 
-static void 
+static void
 usage(void)
 {
 	fprintf(stderr,
@@ -30,8 +23,8 @@ usage(void)
 	exit(1);
 }
 
-static void 
-parse_options(int argc, char **argv) 
+static void
+parse_options(int argc, char **argv)
 {
 	int i;
 	node.hostname = NULL;
@@ -102,7 +95,7 @@ on_response(msgxchng_response_t *res, int status)
 				if (!strncmp(p->key.via.raw.ptr, "return", p->key.via.raw.size)) {
 					if (!strncmp(p->val.via.raw.ptr, "success", p->val.via.raw.size))
 						success = 1;
-					else 
+					else
 						success = 0;
 				} else if (!strncmp(p->key.via.raw.ptr, "error", p->key.via.raw.size)) {
 					if (!config.no_output) fprintf(stderr, "red: %s\n", p->val.via.raw.ptr);
@@ -118,7 +111,7 @@ on_response(msgxchng_response_t *res, int status)
 		exit(1);
 }
 
-void 
+void
 handle_add_node(int argc, char **argv)
 {
 	char *data;

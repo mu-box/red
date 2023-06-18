@@ -1,7 +1,7 @@
-[![red logo](http://nano-assets.gopagoda.io/readme-headers/red.png)](http://nanobox.io/open-source#red)
- [![Build Status](https://travis-ci.org/nanopack/red.svg)](https://travis-ci.org/nanopack/red)
+[![red logo](http://microbox.rocks/assets/readme-headers/red.png)](http://microbox.cloud/open-source#red)
+ [![Build Status](https://github.com/mu-box/red/actions/workflows/ci.yaml/badge.svg)](https://github.com/mu-box/red/actions)
 # red
-A fast, in-kernel, ad-hoc point-to-point vxlan network. This project interacts with [redd](https://github.com/nanopack/redd) to build virtual networks. The redd project is the daemon that interacts with the kernel's vxlan module. This project is the command-line utility used to interact with redd.
+A fast, in-kernel, ad-hoc point-to-point vxlan network. This project interacts with [redd](https://github.com/mu-box/redd) to build virtual networks. The redd project is the daemon that interacts with the kernel's vxlan module. This project is the command-line utility used to interact with redd.
 
 ## How to use red:
 
@@ -54,4 +54,4 @@ Sends a simple request to the redd api to see if it is listening.
 #### status
 Shows information about the redd server, including ips and nodes.
 
-[![open source](http://nano-assets.gopagoda.io/open-src/nanobox-open-src.png)](http://nanobox.io/open-source)
+[![open source](http://microbox.rocks/assets/open-src/microbox-open-src.png)](http://microbox.cloud/open-source)

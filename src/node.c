@@ -1,12 +1,5 @@
 // -*- mode: c; tab-width: 4; indent-tabs-mode: 1; st-rulers: [70] -*-
 // vim: ts=8 sw=8 ft=c noet
-/*
- * Copyright (c) 2015 Pagoda Box Inc
- * 
- * This Source Code Form is subject to the terms of the Mozilla Public License, v.
- * 2.0. If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- */
 
 #include <stdio.h>	/* standard buffered input/output */
 #include <stdlib.h>	/* standard library definitions */
@@ -37,7 +30,7 @@ free_node(red_node_t *node)
 }
 
 static void
-pack_key_value(msgpack_packer *packer, char *key, 
+pack_key_value(msgpack_packer *packer, char *key,
 	int key_len, char *value, int value_len)
 {
 	msgpack_pack_raw(packer, key_len);
